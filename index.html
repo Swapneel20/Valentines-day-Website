@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="index.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Virtual Valentine's Day Card</title>
+  </head>
+  <body>
+    <div class="envelope-wrapper">
+      <div id="envelope" class="close">
+        <div class="front flap"></div>
+        <div class="front pocket"></div>
+        <div class="letter">
+          <p class="words line1">Hello Diya</p>
+          <p class="words line2">You're the prettiest girl I ever met.</p>
+          <p class="words line3">Lots of love...</p>
+          <p class="words line4">Swapneel</p>
+        </div>
+        <div class="hearts">
+          <div class="heart a1"></div>
+          <div class="heart a2"></div>
+          <div class="heart a3"></div>
+        </div>
+      </div>
+    </div>
+    <div class="reset">
+      <button id="open">Open</button>
+      <button id="reset">Reset</button>
+    </div>
+    <div>
+      <div class="btn-wrap static" onclick="myFunction()">
+        <a href="javascript:void(0)" class="btn" title="Yes">
+          <span>Yes</span>
+        </a>
+      </div>
+      <div class="btn-wrap tricky">
+        <a href="javascript:void(0)" class="btn" title="No">
+          <span></span>
+        </a>
+      </div>
+    </div>
+    <h1 class="valentine">Will you be my Valentine again?</h1>
+    <h1 id="Thanks">I promise I won't let you down this time :)</h1>
+    <script>
+      function myFunction() {
+        document.getElementById("Thanks").style.visibility = "visible";
+      }
+    </script>
+    <script src="index.js"></script>
+    <script src="tricky.js"></script>
+  </body>
+</html>
